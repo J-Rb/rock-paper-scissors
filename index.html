@@ -5,13 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./dom_logic.js" defer></script>
+    <script type="module" src="./game.js" defer></script>
 </head>
 
 <body>
-    rock
+    <!-- rock
     paper and scissors icons,
-    then bigger icon for one you selected a
+    then bigger icon for one you selected a -->
+    <div class="score">
+        <div id="playerScore" class="score-text">
+        </div>
+    </div>
+    <div class="selection-container">
+        <div class="top">
+            <div class="player-side">
+                <div class="player-name">Player</div>
+                <div class="player-selection"></div>
+            </div>
+            <div class="opponent-side">
+                <div class="opponent-name">Computer</div>
+                <div class="opponent-selection"></div>
+            </div>
+        </div>
+        <div class="selector">
+            <div class="rock">
+                <img src="./images/rock.png" alt="rock">
+            </div>
+            <div class="paper">
+                <img src="./images/paper.png" alt="paper">
+            </div>
+            <div class="scissors">
+                <img src="./images/scissors.png" alt="scissors">
+            </div>
+        </div>
+
+    </div>
+    <div class="score">
+        <div id="computerScore" class="score-text">
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <p class="result">You Win!</p>
+            <span class="close">&times;</span>
+
+        </div>
+    </div>
+
 </body>
 
 </html>
